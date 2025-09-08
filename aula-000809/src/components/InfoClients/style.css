@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f1e1; /* Cor suave e clara, combinando com marrom claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #5f4b3b; /* Cor marrom mais escura para o texto */
+}
+
+.Info-time {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.Info-time:hover {
+    transform: translateY(-10px); /* Efeito de elevação */
+}
+
+.Info-time img {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #8e6e52; /* Marrom dourado mais suave */
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #8e6e52; /* Cor marrom dourado para os rótulos */
+    font-weight: 500;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 2px solid #d2b48c; /* Tom de marrom claro */
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fdf5e6; /* Cor clara que combina com o marrom */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #ff7043; /* Laranja queimado para o foco */
+    box-shadow: 0 0 5px rgba(255, 112, 67, 0.4); /* Efeito laranja no foco */
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #ff7043; /* Cor complementar laranja */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e65c2f; /* Laranja escuro no hover */
+    transform: scale(1.05);
+}
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #d2b48c; /* Marrom claro para o separador */
+    width: 80%;
+}
+
+h3 {
+    font-size: 22px;
+    color: #8e6e52;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: #5f4b3b;
+}
+
+li {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f4f1e1; /* Cor suave para os itens da lista */
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #e0d0b9; /* Tom de bege mais escuro */
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .Info-time {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
